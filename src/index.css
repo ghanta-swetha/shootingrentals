@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-brown-50: #efebe9;
+  --color-brown-100: #d7ccc8;
+  --color-brown-200: #bcaaa4;
+  --color-brown-300: #a1887f;
+  --color-brown-400: #8d6e63;
+  --color-brown-500: #795548;
+  --color-brown-600: #6d4c41;
+  --color-brown-700: #5d4037;
+  --color-brown-800: #4e342e;
+  --color-brown-900: #3e2723;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--color-brown-900);
+  background-color: white;
+}
+
+.btn {
+  @apply px-6 py-3 rounded-md font-medium transition-all duration-300 transform hover:scale-105;
+}
+
+.btn-primary {
+  @apply bg-brown-600 text-white hover:bg-brown-700;
+}
+
+.btn-secondary {
+  @apply bg-white text-brown-600 border border-brown-600 hover:bg-brown-50;
+}
+
+.section-title {
+  @apply text-4xl font-bold text-brown-800 mb-8 relative inline-block;
+}
+
+.section-title::after {
+  content: "";
+  @apply absolute bottom-0 left-0 w-1/2 h-1 bg-brown-500 rounded-full;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl;
+}
+
+.input {
+  @apply w-full px-4 py-3 border border-brown-200 rounded-md focus:outline-none focus:ring-2 focus:ring-brown-500 focus:border-transparent;
+}

@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-sans text-brown-800;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-serif;
+}
+
+.btn {
+  @apply px-6 py-3 rounded-md transition-all duration-300 font-medium;
+}
+
+.btn-primary {
+  @apply bg-brown-700 text-white hover:bg-brown-800;
+}
+
+.btn-outline {
+  @apply border-2 border-brown-700 text-brown-700 hover:bg-brown-700 hover:text-white;
+}
+
+.section {
+  @apply py-16 md:py-24;
+}
+
+.container {
+  @apply max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl;
+}
+
+.input {
+  @apply w-full px-4 py-3 border border-brown-200 rounded-md focus:outline-none focus:ring-2 focus:ring-brown-500;
+}
+
+.product-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6;
+}
